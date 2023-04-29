@@ -5,7 +5,7 @@ raiz = Tk()
 etqTexto = ttk.Label(raiz, text="Etiqueta sólo texto")
 etqTexto.grid()
 
-imagen = PhotoImage(file="robot.png")
+imagen = PhotoImage(file="./Imagenes/robot.png")
 
 etqImagen = ttk.Label(raiz)
 etqImagen.grid()

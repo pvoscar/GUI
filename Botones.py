@@ -5,7 +5,7 @@ raiz = Tk()
 boton = ttk.Button(raiz, text="Botón sólo texto")
 boton.grid()
 
-imagen = PhotoImage(file="robot.png")
+imagen = PhotoImage(file="./Imagenes/robot.png")
 
 btnImagen = ttk.Button(raiz)
 btnImagen.grid()
