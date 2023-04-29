@@ -31,27 +31,27 @@ marcoSec1.grid(column=0, row=0, columnspan=4, rowspan=5, padx=10, pady=10)
 
 #Se agregan los widgets al marco secundario 1
 #Nombre:
-ttk.Label(marcoSec1, text="Nombre:").grid(column=0, row=0, sticky=W)
+ttk.Label(marcoSec1, text="Nombre:", font=('bold', 14)).grid(column=0, row=0, sticky=W)
 txtNombre = ttk.Entry(marcoSec1, textvariable=nombre, width=25)
 txtNombre.grid(column=1, row=0, columnspan=3, sticky=E)
 
 #Apellido Paterno
-ttk.Label(marcoSec1, text="A. Paterno:").grid(column=0, row=1, sticky=W)
+ttk.Label(marcoSec1, text="A. Paterno:", font=('bold', 14)).grid(column=0, row=1, sticky=W)
 txtAPaterno = ttk.Entry(marcoSec1, textvariable=aPaterno, width=25)
 txtAPaterno.grid(column=1, row=1, columnspan=3, sticky=E)
 
 # Apellido Materno:
-ttk.Label(marcoSec1, text='A. Materno:').grid(column=0, row=2, sticky=W)
+ttk.Label(marcoSec1, text='A. Materno:', font=('bold', 14)).grid(column=0, row=2, sticky=W)
 aMaterno = ttk.Entry(marcoSec1, textvariable=aMaterno, width=25)
 aMaterno.grid(column=1, row=2, columnspan=3, sticky=E)
 
 # Correo:
-ttk.Label(marcoSec1, text='Correo:').grid(column=0, row=3, sticky=W)
+ttk.Label(marcoSec1, text='Correo:', font=('bold', 14)).grid(column=0, row=3, sticky=W)
 correo = ttk.Entry(marcoSec1, textvariable=correo, width=25)
 correo.grid(column=1, row=3, columnspan=3, sticky=E)
 
 # Móvil:
-ttk.Label(marcoSec1, text='Móvil:').grid(column=0, row=4, sticky=W)
+ttk.Label(marcoSec1, text='Móvil:', font=('bold', 14)).grid(column=0, row=4, sticky=W)
 movil = ttk.Entry(marcoSec1, textvariable=movil, width=25)
 movil.grid(column=1, row=4, columnspan=3, sticky=E)
 
@@ -65,7 +65,7 @@ marcoSec2.grid(column=0, row=5, columnspan=4, rowspan=2, padx=10, pady=10, stick
 
 #Se agregan los widgets al marco secundario 2
 ttk.Label(marcoSec2, text='Aficiones:').grid(column=0, row=5, columnspan=4, sticky=W)
-chkAficion1 = ttk.Checkbutton(marcoSec2, text='Leer').grid(column=0, row=6)
+chkAficion1 = ttk.Checkbutton(marcoSec2, text='Leer', state='!selected').grid(column=0, row=6)
 chkAficion2 = ttk.Checkbutton(marcoSec2, text='Música').grid(column=1, row=6)
 chkAficion3 = ttk.Checkbutton(marcoSec2, text='Videojuegos').grid(column=2, row=6, columnspan=2)
 
